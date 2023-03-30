@@ -1,0 +1,470 @@
+@font-face {
+    font-family: damion;
+    src: url('damion.ttf');
+}
+
+:root {
+    --color0: #0F1F2D;
+    --color1: #111111;
+    --color2: #c58837;
+    --color3: #f4b95b; 
+    --color4: #785430;
+    --color5: #987847; 
+    --color6: #a16504; 
+    --color7: #143048;
+    --color9: #1a4366;
+    --color8: #011e37;
+}
+
+@font-face {
+	font-family:'n4';
+	src: url('../plugin/font/normal/n4.ttf') format('truetype');
+}
+@font-face {
+	font-family:'s6';
+	src: url('../plugin/font/sambung/s6.ttf') format('truetype');
+}
+@font-face {
+	font-family:'s7';
+	src: url('../plugin/font/sambung/s7.ttf') format('truetype');
+}
+ .font_s1 {
+    font-family: s7;
+} .font_s6 {
+    font-family: s6;
+    font-size: 3rem;
+}
+
+footer {
+    background-color: var(--color7);
+}
+
+.invite {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--color0);
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    transition: all 300ms ease 0s;
+} .invite-title {
+    font-size: 3rem;
+} .buka {
+    transform: translateY(-200%);
+}
+
+.nav {
+    display: none;
+    position: fixed;
+    left: 30px;
+    right: 30px;
+    bottom: 20px;
+    z-index: 999999;
+    padding: 10px;
+    border-radius: 100px;    
+    background-color:var(--color9);
+} 
+.nav a {
+    transition: all 200ms ease 0s;
+    background-color: var(--color7);
+    color:#fff;
+    padding: 5px;
+    border-radius: 50px;
+}
+.nav a:hover {
+    color:var(--tombol)
+}
+
+
+
+.container-hiasan {
+    position: relative;
+} .hiasan {
+    width: 300px;
+    position: absolute;
+    z-index: 99;
+} .absolute-images {
+    pointer-events: none;
+    position: absolute;
+    width: 400px;
+} 
+
+.absolute-images:first-child {
+    left: -120px;
+    top:0;
+    transform: rotate(-70deg);
+} .absolute-images:nth-child(2) {
+    bottom: -100px;
+    right: -50px;
+} .absolute-images:nth-child(3) {
+    transform: translate(100px,200px);
+}
+.absolute-images:last-child {
+    transform: translate(600px,-200px);
+}
+
+.hiasan1 {
+    top:-50px;
+    left:-150px;
+} .hiasan2 {
+    right: -150px;
+    bottom: 0px;
+} 
+.himbauan .hiasan1,
+.wedding-gift .hiasan1,
+.love-story .hiasan1 {
+    top: 300px;
+} 
+.himbauan .hiasan,
+.wedding-gift .hiasan,
+.love-story .hiasan {
+    z-index: -1;
+}
+
+.protocol {
+    background-color: var(--color7);   
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.box:hover p {
+    color:#ddd;
+} .box:hover i {
+    background-color: rgb(172, 172, 246);
+    color:black;
+}
+
+.hilang {
+    transform: translate(0, -20px);
+    opacity: 0;
+} .hilang.muncul {
+    opacity: 1;
+}
+
+
+.paslon-title {
+    padding: 20px 50px;
+    margin: 50px 0;
+}
+.bank {
+    filter: drop-shadow(1px 1px 0px white);
+    padding: 20px;
+    width: 100%;
+} 
+
+.comments {
+    border: 10px double var(--color7);
+    padding: 10px;
+    overflow: auto;
+    height:150px;
+    background-color: #ddd;
+    border-radius: 30px;
+    
+} .comment h5 {
+    color:#777;
+}
+
+
+.boxs {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 10px;
+} .box {
+    border-radius: 50px 50px 0 0;
+    width: 200px;
+    padding: 10px;
+    background-color: var(--teks2);
+    color:white;
+} .box:hover {
+    background-color: var(--teks);
+} .box p {
+    color:white;
+} .protocol {
+    
+}
+
+
+.wedding-gift .card {
+    padding: 10px;
+    text-align: center;
+    border-radius: 50px;
+    overflow: hidden;
+} .icon-bank {
+    font-size: 60px;
+    color:var(--color2);
+    -webkit-text-stroke: 1px white;
+} .card-body-description {
+    height:200px;
+} .card-images {
+    height:100px; 
+} .header-image {
+    width: 100px;
+    transform: rotate(270deg);
+    position: relative;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6, 
+p {color:var(--color3);}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    /* background: var(--color1); */
+    font-family: n4;
+    overflow-x: hidden;
+    background:linear-gradient(180deg, var(--color1), var(--color0) 70%);
+}
+.title-image {
+    border-radius: 50%;
+    width: 200px;
+} .title-description h1 {
+    font-weight: bold;
+} 
+.title-description p  {
+    color:white;
+} .btn-primary {
+    transition: all 500ms ease 0s;
+    background:var(--color6); 
+    border: unset;
+} .btn-primary:hover {
+    background:var(--color4); 
+} .title-images {
+    position: static;
+} .frame {
+    transform:translate(-210px,-30px);
+    position: absolute;
+    width: 230px;
+    animation: putar 5s linear 0s infinite;
+} .dates {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    color:white;
+    font-weight:bold;
+} .damion {
+    font-family: damion;
+} .time {
+    transition: all 500ms ease 0s;
+    border: 5px solid var(--color3);
+    background: var(--color4);
+    width: 60px;
+    border-radius: 10px;
+} .separator {
+    object-fit: cover;
+    width: 100%;
+} .image-design {
+    position: absolute;
+    width: 120px;
+} .images-design {
+    position: static;
+} .relative {
+    position: relative;
+} .absolute {
+    position: absolute;
+    left: 0;
+    width: 150px;
+} .paslon-image {
+    z-index: 9;
+} .flower1 {
+    left: -100px;
+} .flower2 {
+    transform: translate(150px,0);
+}   .absensi {
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 0 5px;
+    color:white;
+    background-color: var(--color5)
+} .undangan {
+    font-size: 1.5rem;
+    color:white;
+}
+
+.img1 {
+    right: 0;
+    transform:rotate(180deg);
+} .img2 {
+    top: -20px;
+    width: 150px;
+    left: -30px;
+    transform:rotate(180deg)
+} .img3 {
+    width: 200px;
+    bottom: -20px;
+    left: -40px;
+} .img4 {
+    right: 30px;
+    bottom: 20px;
+} .img5 {
+    width: 300px;
+    top: 150px;
+    left: 400px;
+} @keyframes putar {
+    to {transform:translate(-210px,-30px) rotate(360deg);}
+} 
+
+.paslon-title {
+    box-shadow: 5px 5px 100px var(--color7);
+    background-color: white; 
+    background-color:hsla(226, 45%, 24%, .5); 
+    border-radius:30px;
+} .paslon-image {
+    width: 200px;
+    border-radius: 100px 100px 0 0;
+    border: 5px solid var(--color7);
+    box-shadow: 0 -3px 7px #fff;
+} .strip {
+    background-color: #fff;
+    height: 1px;
+    width: 100px;
+} .separatordan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} .card {
+    background-color: var(--color8);
+    box-shadow: 5px 5px 5px var(--color7);
+} .card-img-top {
+    height: 500px;
+    object-fit: cover;
+    object-position: center -px;
+} .image-galery {
+    width: 250px;
+    border: 3px solid white;
+    border-radius: 30px;
+} .nav .link:focus {
+    color:var(--color2);
+}
+
+@media screen and (max-width:550px) {
+    .absolute-images {
+        width: 250px;
+    } .sizing {
+        font-size: 2.5rem;
+    } .img5 {
+        transform: translate(-500px,0);
+    } .hiasan2 {
+        display: none;
+    }
+
+    .pasimage .flower1,
+    .pasimage .flower2 {
+        display: none;
+    } .female-title h3 {
+        font-size: 2.5rem;    
+    } .female-title p {
+        font-size: 1rem;
+    }
+    .absolute-images:first-child {
+        left: -60px;
+    } .absolute-images:nth-child(2) {
+        bottom: -100px;
+        right: -50px;
+    } 
+    
+    .hiasan1 {
+        left:-150px;
+    } .hiasan2 {
+        right: -200px;
+        bottom: 0px;
+    }
+    .image-design {
+        width:600px;
+    } 
+    .img1 {
+        right: 0;
+        transform:rotate(180deg);
+    } .img2 {
+        top: -20px;
+        width: 150px;
+        left: -30px;
+        transform:rotate(180deg)
+    } .img3 {
+        width: 200px;
+        bottom: -20px;
+        left: -40px;
+    } .img4 {
+        right: 30px;
+        bottom: 20px;
+    } .img5 {
+        width: 60px;
+        top: 0;
+        left: 0;
+    } 
+}
+
+@media screen and (max-width:440px) {
+    .paslon-image {
+        width: 250px;
+        margin-left: 0;
+    } 
+    
+    .flower1 {
+        left: -70px;
+    } .flower2 {
+        transform: translate(30px,-70px);
+    } .paslon {
+        padding: 0;
+    } .image-galery {
+        border-radius: unset;
+        width:100%;
+        border: 3px solid white;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .image-design {
+        width: 60px;
+    } .img5 {
+        width: 300px;
+        top: 150px;
+        left: 400px;
+    } .img1 {
+        right: 0;
+        transform:rotate(180deg);
+    } .img2 {
+        top: -20px;
+        left: 0px;
+        transform:rotate(180deg)
+    } .img3, .img4  {
+        display: none;  
+    } .paslon-p {
+        font-size: 12px;
+    }
+} 
+
+
+@media screen and (max-width:340px) {
+    .paslon-h3 {
+        font-size: 16px;
+    } .paslon-p {
+        font-size: 13px;
+    }
+}
+
+.myicon {
+    display: none;
+    text-align: center;
+    font-size: 20px;
+    color:#fff;
+    top: 50%;
+    right: 0;
+    position:fixed;
+    background-color: var(--color9);
+    padding: 5px;
+    border-radius: 50px;
+    border: 10px double var(--color3);
+    z-index: 99999999999;
+}
